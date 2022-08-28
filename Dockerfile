@@ -26,3 +26,5 @@ COPY --from=node_modules /package.json ./package.json
 COPY --from=builder /build/dist/ ./dist/
 
 CMD node dist
+
+EXPOSE 1333
